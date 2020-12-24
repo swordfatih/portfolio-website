@@ -8,6 +8,4 @@ A responsive e-Portfolio using only HTML and CSS.
 ***
 Home page | Responsive
 ------------- | ------
-![home](https://i.ibb.co/Jm7hTHj/Capture.png) | ![responsive](https://i.ibb.co/PQL9GMX/Capture.png)
-
-
+![home](https://i.ibb.co/HhkXPDr/Capture.png) | ![responsive](https://i.ibb.co/PQL9GMX/Capture.png)
