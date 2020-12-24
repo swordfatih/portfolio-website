@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>ePortfolio - Compétences</title>
+        <link rel="icon" href="./assets/portable.png"/>
+        
+        <!-- Description -->
+        <meta name="description" content="ePortfolio de Fatih pour le projet de CDIN">
+        <meta name="keywords" content="HTML, CSS, CDIN, ePortfolio">
+        <meta name="author" content="Fatih KILIC">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
+        <!-- mobile specific info ... mobile specify windows size to 800/900 whereas device-width is less in general, resulting in small texte etc.- those meta correct this... -->
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, height=device-height"/>
+
+        <link rel="stylesheet" href="./style/bootstrap.css"/> <!-- Bootstrap -->
+
+        <link rel="stylesheet" href="./style/style.css"/> <!-- Style principale -->
+        <link rel="stylesheet" href="./style/styleh.css" media="screen and (max-width: 1200px)"/> <!-- Style avec media queries -->
+        <link rel="stylesheet" href="./style/style_competences.css"/> <!-- Style particulier -->
+    </head>
+
+    <body>
+        <div> <!-- La partie globale centrée -->
+            <header> <!-- L'entête -->
+                <div></div> <!-- Logo -->
+                <div> <!-- Nom -->
+					<h2>Bjorn K. Haraldson</h2>
+                    <p>Etudiant en informatique</p>
+				</div>
+            </header>
+
+            <main> <!-- La partie principale -->
+                <nav> <!-- Le menu -->
+                    <ul>
+                        <li><a href="accueil.html">Accueil</a>
+                            <ul>
+                                <li><a href="accueil.html#introduction">Introduction</a></li>
+                                <li><a href="accueil.html#presentation">Présentation</a></li>
+                                <li><a href="accueil.html#motivation">Motivation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="competences.html">Compétences</a>
+                            <ul>
+                                <li><a href="competences.html#langages">Langages</a></li>
+                                <li><a href="competences.html#leadership">Leadership</a></li>
+                                <li><a href="competences.html#qualites">Qualités</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="experiences.html">Experiences</a>
+                            <ul>
+                                <li><a href="experiences.html#stage">Stage</a></li>
+                                <li><a href="experiences.html#scolarite">Scolarité</a></li>
+                                <li><a href="experiences.html#bac">Baccalauréat</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="loisirs.html">Loisirs</a>
+                            <ul>
+                                <li><a href="loisirs.html#jeux">Jeux vidéo</a></li>
+                                <li><a href="loisirs.html#volleyball">Volleyball</a></li>
+                                <li><a href="loisirs.html#art">Art</a></li>
+                            </ul>
+                        </li>
+                     </ul>
+                </nav>
+
+                <div> <!-- Le slider avec l'image -->
+                    <div>
+                        <h1>Mes compétences</h1>
+                        <p>Apprenez à mieux me connaître, voici mes différents compétences!</p>
+                    </div>
+                </div>
+
+                <section> <!-- Le contenu de la page -->
+                    <article id="langages"> <!-- Les différents articles -->
+                        <h1><img src="./assets/dev.png" alt="Mes langages"/>Langages de programmation</h1> <!-- Titre avec icon -->
+                        <img class="droite" src="./assets/web.png" alt="Mes talents en web"/>
+                        <p>
+                            <ul class="boostrap"> <!-- La liste des langages -->
+                                <li>
+                                    <img src="./assets/cpp.png" alt="C++"/> <!-- Icon -->
+                                    <b>C/C++</b> : Je fais du C++ depuis que je suis tout petit ! En effet, j’ai commencé en 5ème.
+                                    <div class="progress"><div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:100%"></div></div>
+                                </li>
+
+                                <li>
+                                    <img src="./assets/c.png" alt="C"/>
+                                    <b>C</b> : Je maitrise le C grâce à mes connaissances en C++. J'ai pu approfondir mes connaissances à l'IUT.
+                                    <div class="progress"><div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:80%"></div></div>
+                                </li>
+
+                                <li>
+                                    <img src="./assets/java.png" alt="Java"/>
+                                    <b>Java</b> : Le Java était très intéressant, je suis content d’en avoir fait à l’IUT.
+                                    <div class="progress"><div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:70%"></div></div>
+                                </li>
+
+                                <li>
+                                    <img src="./assets/js.png" alt="JS"/>
+                                    <b>HTML/CSS/JS</b> : Je me suis initié moi-même aux langages du Web alors que je n’avais seulement 9 ans, en CM1.
+                                    <div class="progress"><div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:95%"></div></div>
+                                </li>
+
+                                <li>
+                                    <img src="./assets/php.png" alt="PHP"/>
+                                    <b>PHP</b> : Le PHP m’a été enseigné dans mes études et je maitrise assez bien; c’est parfois mon point fort !
+                                    <div class="progress"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width:85%"></div></div>
+                                </li>
+                            </ul>
+                        </p>
+                    </article>
+
+                    <article id="leadership"> <!-- Article leadership -->
+                        <h1><img src="./assets/leader.png" alt="Mon leadership"/>Leadership</h1>
+                        <img class="gauche" src="./assets/leadership.jpg" alt="Moi, leader"/>
+                        <p class="bootstrap">
+                            Je suis un <b>leader</b> dans l’âme.<br><br>
+                            En effet, dans les <b>nombreux projets</b> que j’ai entrepris j’ai toujours assumé un <b>rôle de meneur</b> où je devais guider mon équipe vers la réussite dans une bonne humeur globale.<br><br>
+                            Par exemple, j’ai participé à la <b>Nuit de l’Info avec mon équipe</b> <i>LES SERPENTS AUSTRALIENS DU PACIFIQUE</i> et j’ai été chef d’équipe.
+                        </p>
+                        <a type="button" class="btn btn-secondary" href="http://ninjago.alwaysdata.net/">Accéder au site de la Nuit de l'Info</a>
+                    </article>
+
+                    <article id="qualites"> <!-- Article qualites -->
+                        <h1><img src="./assets/quality.png" alt="Mes qualités"/>Qualités</h1>
+                        <img class="droite" src="./assets/qualities.png" alt="Moi, pleins de qualités"/>
+                        <p>
+                            Voici un <b>condensé</b> de mes différentes <b>qualités</b>, sans vouloir me vanter bien évidemment.<br><br>
+                            Je suis <b>très</b> généreux et gentil et cela fait de moi un <b>excellent élément</b> pour une équipe de programmation.<br><br> 
+                            Peut-être alors pour <b>votre</b> entreprise prochainement ? 😉<br>
+                            <div><img src="./assets/radar.png"/></div>
+                        </p>
+                    </article>
+                </section>
+                
+                <aside> <!-- Barre latérale -->
+                    <article> <!-- Annuaire -->
+                        <h1><img src="./assets/annuaire.png" alt="Mon annuaire"/>Me contacter</h1>
+                        <p>
+                            <a href="https://gmail.com"><img src="./assets/gmail.png" alt="Mon gmail"/></a>
+                            <a href="https://linkedin.com"><img src="./assets/linkedin.png" alt="Mon linkedin"/></a>
+                            <a href="https://twitter.com"><img src="./assets/twitter.png" alt="Mon twitter"/></a>
+                            <a href="https://instagram.com"><img src="./assets/instagram.png" alt="Mon instagram"/></a>
+                        </p>
+                    </article>
+
+                    <article> <!-- Amis -->
+                        <h1><img src="./assets/amis.png" alt="Mes amis"/>Mes collègues</h1>
+                        <p>
+                            <img src="./assets/ricardo.jpg" alt="Mon meilleur ami Ricardo" />Ricardo Pelota<br>
+                            <img src="./assets/pierre.jpg" alt="Mon cher collègue Pierre"/>Pierre Dupont<br>
+                            <img src="./assets/simon.jpg" alt="Mon meilleur camarade Simon"/>Simon Salogni<br>
+                            <img src="./assets/leo.jpg" alt="Mon meilleur pote Léo"/>Léo Charlotte<br>
+                            <img src="./assets/yanis.jpg" alt="Mon mentor Yanis"/>Yanis Spinoza
+                        </p>
+                    </article>
+                </aside>
+            </main>
+
+            <footer> <!-- Le pied de page -->
+                <p>Copyright 2020 © KILIC Fatih</p>
+			</footer>
+        </div>
+    </body>
+</html>

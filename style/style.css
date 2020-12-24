@@ -1,0 +1,260 @@
+/* //////////////////////////////// */
+/*          Balise globale          */
+/* //////////////////////////////// */
+body
+{
+    background-image: url(../assets/clear.png); /* Fond */
+    background-size: cover; /* Le fond couvre toute la page */
+}
+
+body > div
+{
+    margin: auto; /* Pour centrer le contenu */
+    width: 90%; /* Cadre globale */
+    font-family: helvetica, arial; /* Les polices */
+}
+
+/* /////////////////////////////// */
+/* L'entête avec le logo et le nom */
+/* /////////////////////////////// */
+header
+{
+    height: 100px; /* La largeur de l'entête */
+    background-color: #cd5d7d;
+    border-radius: 10px; /* Arrondir les bordures de l'entête */
+    transition: background-color 2s; /* Pour rendre l'apparition plus doux */
+}
+
+header:hover
+{
+    background-color: #ad3356; /* Changer la couleur de l'entête lorsqu'on le survole */
+    transition: background-color 2s; /* Pour rendre le survol plus doux */
+}
+
+header div:first-child
+{
+    display: inline-block; /* Pour aligner les blocs en colonne */
+    background-image: url(../assets/iut.png);
+    background-size: auto 80%;
+    background-repeat: no-repeat; /* Pour que l'image ne se répète pas */
+    background-position-y: center; /* Pour centrer l'image de fond */
+    background-position-x: 10%;
+    height: 100%; /* Hauteur du logo, prend 100% de l'entête */
+    width: 50%; /* Largeur du logo, prend 50% de l'entête */
+}
+
+header div:last-child
+{
+    display: inline-block; /* Pour aligner les blocs en colonne */
+    color: white;
+    height: 50%; /* Pour que le cadre du texte prenne tout le bloc */
+    vertical-align: top; /* Aligner le nom verticalement en haut */
+    text-align: center; /* Aligner le nom au centre */
+    padding-top: 30px; /* Pour centrer le texte verticalement */
+}
+
+header div:last-child h2 
+{
+    font-size: 22px; /* Réduire la taille du nom */
+    margin: 0; /* Annuler le margin par défaut du titre */
+}
+
+header div:last-child p
+{
+    margin: 0; /* Annuler le margin par défaut du paragraphe */
+}
+
+/* //////////////////////////////// */
+/*              Menu                */
+/* //////////////////////////////// */
+nav
+{
+    margin-top: 10px; /* Séparer le menu de l'entête */
+}
+
+nav > ul
+{
+    display: table; /* Pour séparer le contenu équitablement */
+    table-layout: fixed; /* Pour que les élements du menu aient la même longueur */
+    list-style-type: none; /* Pour enlever l'icon par défaut de la liste */
+    margin: 0; /* Par défaut, ul a un margin et un padding, on les annule */
+    padding: 0; 
+    width: 100%; /* Pour que la liste prenne toute la longueur disponible */
+    border-spacing: 3px; /* Séparer les boites */
+}
+
+nav > ul > li
+{
+    display: table-cell; /* Pour séparer les li équitablement */
+}
+
+nav > ul li a
+{
+    color: white;
+    display: block; /* Pour rendre le li parent cliquable */
+    height: 30px; /* Pour que toute la largeur soit cliquable */
+    text-align: center; /* Centrer le texte horizontalement */
+    padding-top: 12px; /* Pour centrer le texte */
+    background-color: #a7c5eb; /* Remplir les boites */
+    text-decoration: none; /* Enlever la décoration par défaut */
+}
+
+nav ul li > a:hover
+{
+    background-color: #949cdf; /* Couleur de remplissage quand on survole */
+    color: rgb(95, 95, 95);
+    transition: background-color 0.5s; /* Pour rendre le survol plus doux */
+}
+
+/* //////////////////////////////// */
+/*            Sous menu             */
+/* //////////////////////////////// */
+nav ul ul
+{
+    list-style-type: none; /* Pour enlever l'icon par défaut de la liste */
+    margin: 0; /* Par défaut, ul a un margin et un padding, on les annule */
+    padding: 0; 
+    display: block; /* Pour rendre le sous-menu invisible de base*/
+    height: 0;
+    overflow: hidden; /* Le surplus est caché */
+    transition: 2s; /* Transition pour la fermeture du sous menu */
+}
+
+nav > ul > li:hover ul
+{
+    height: 125px; /* Ouvrir le sous menu */
+    transition: height 1s; /* Transition pour l'ouverture du sous menu */
+}
+
+/* //////////////////////////////// */
+/*              Slider              */
+/* //////////////////////////////// */
+main > div
+{
+    background-image: url(../assets/code.jpg); /* Le fond de l'article */
+    background-size: cover; /* Le fond couvre toute l'article */
+    height: 300px; /* Largeur de l'article */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Texte centré horizontalement */
+    margin-top: 10px; /* Séparer le slider du menu */
+    padding: 10% 5px 0 5px; /* Centrer le texte verticalement */
+    transition: 2s; /* Pour rendre l'apparition plus doux */
+}
+
+main > div div
+{
+    backdrop-filter: blur(5px); /* Fond flouté */
+    width: 70%; /* Pour que le fond prenne une partie de la page */
+    margin: auto; /* Pour que le fond soit centré */
+    border-radius: 25px; /* Pour arrondir les contours */
+}
+
+main > div h1
+{
+    margin: 0; /* Effacer le margin par défaut */
+    font-size: 60px; /* Aggrandir le texte */
+}
+
+main > div p
+{
+    font-size: 30px; /* Aggrandir le texte */
+}
+
+/* //////////////////////////////// */
+/*              Page                */
+/* //////////////////////////////// */
+section
+{
+    display: inline-block; /* Pour aligner la page et la barre latérale horizontalement */
+    width: 70%; /* Pour laisser de la place à la barre latérale */
+}
+
+article
+{ 
+    background-color: #f6ecf0; /* Fond de la page */
+    margin-top: 10px; /* Pour séparer la page du slider et les articles entre eux */
+    border-radius: 10px; /* On arrondit les contours */
+    border: solid; /* Pour activer la bordure */
+    border-color: #a7c5eb; /* Couleur des bordures */
+    padding: 0px 10px 10px 10px; /* Pour écarter le contenu des bordures */
+    overflow: auto; /* Pour garder les flottants à l'intérieur de l'article */
+    height: 300px;
+}
+
+article:hover
+{
+    border-color: #949cdf; /* Changer la couleur de la bordure de l'article lorsqu'on le survole */
+}
+
+article img
+{
+    width: 20px; /* Longueur de l'icon */
+    margin-right: 10px; /* Séparer l'icon du titre */
+    margin-bottom: -3px; /* Pour aligner l'icon */
+}
+
+article h1
+{
+    width: 100%; /* Pour étirer la bordure du bas */
+    padding-bottom: 2px; /* Pour séparer le titre de la bordure */
+    border-bottom: 1px solid; /* La bordure du bas */
+    margin-top: 10px; /* Pour séparer le titre de */
+}
+
+.gauche /* Class à utiliser pour mettre un élément à gauche dans une div */
+{
+    float: left; /* Pour caler la boîte à gauche */
+    width: 10%; /* Mettre la partie à 20% de l'article */
+    height: auto; /* Adapter l'hauteur automatiquement */
+    border-radius: 5px; /* Arrondir les contours */
+    margin: 0 10px 0 0; /* Ecarter l'image du texte */
+}
+
+.droite /* Class à utiliser pour mettre un élément à droite dans une div */
+{
+    float: right; /* Pour caler la boîte à droite */
+    width: 10%; /* Mettre la partie à 20% de l'article */
+    height: auto; /* Adapter l'hauteur automatiquement */
+    border-radius: 5px; /* Arrondir les contours */
+    margin: 0 0 0 10px; /* Ecarter l'image du texte */
+}
+
+/* //////////////////////////////// */
+/*          Barre latérale          */
+/* //////////////////////////////// */
+aside
+{
+    width: 28.6%; /* Pour que la boite prenne toute la largeur restante */
+    display: inline-block; /* Pour que la barre latérale s'aligne horizontalement */
+    vertical-align: top; /* Pour ramener la barre latérale en haut */
+    margin-left: 10px; /* Pour séparer la barre des autres articles */
+    position: sticky; /* Pour que la barre latérale suive le défilement */
+    top: 0px; /* Où la barre doit se coller en cas de défilement */
+}
+
+aside article
+{
+    border-radius: 0; /* Pour rendre les coins droits */
+    background-color: #949cdf; /* Pour changer le fond */
+    color: white; /* Mettre le texte en blanc pour le rendre lisible */
+    border-color: #f6ecf0; /* Changer la couleur des bordures */
+    height: auto;
+}
+
+/* //////////////////////////////// */
+/*          Pied de page            */
+/* //////////////////////////////// */
+footer
+{
+    height: 50px; /* Largeur du pied de page */
+    background-color: rgb(63, 63, 63); /* Couleur du fond */
+    margin-top: 10px; /* Espace entre le pied de page et la page */
+    text-align: center; /* Centrer le texte horizontalement */
+    line-height: 50px; /* Centrer le texte verticalement */
+    border-radius: 10px; /* Arrondir les contours */
+}
+
+footer p
+{
+    color: white; /* Texte en blanc */
+}

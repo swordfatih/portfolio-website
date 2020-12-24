@@ -1,0 +1,52 @@
+/* //////////////////////////////// */
+/*    Style pour competences.html   */
+/* //////////////////////////////// */
+
+/* //////////////////////////////// */
+/*              Slider              */
+/* //////////////////////////////// */
+main > div
+{
+    background-image: url(../assets/langages.png); /* Pour changer l'image du slider */
+}
+
+/* //////////////////////////////// */
+/*              Page                */
+/* //////////////////////////////// */
+#langages ul
+{
+    list-style-type: none; /* Pour enlever l'icon par défaut de la liste */
+    margin: 0; /* Par défaut, ul a un margin et un padding, on les annule */
+    padding: 0; 
+}
+
+#langages li
+{
+    margin-top: 20px; /* Pour séparer les élements de la liste */
+}
+
+#langages .progress
+{
+    margin-top: 10px; /* Pour séparer l'élement de sa barre */
+}
+
+#leadership, #qualites div 
+{
+    text-align: center; /* Pour aligner le bouton au centre */
+}
+
+#leadership a
+{
+    text-decoration: none; /* Enlever le soulignement par défaut */
+    margin-top: 50px; /* Séparer le bouton du texte */
+}
+
+#leadership p, #leadership h1
+{
+    text-align: left; /* Garder le texte à gauche */
+}
+
+#qualites div img
+{
+    width: 30%; /* La longueur de l'image */
+}

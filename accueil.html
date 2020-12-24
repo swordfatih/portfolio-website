@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>ePortfolio - Accueil</title>
+        <link rel="icon" href="./assets/portable.png"/>
+        
+        <!-- Description -->
+        <meta name="description" content="ePortfolio de Fatih pour le projet de CDIN">
+        <meta name="keywords" content="HTML, CSS, CDIN, ePortfolio">
+        <meta name="author" content="Fatih KILIC">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
+        <!-- mobile specific info ... mobile specify windows size to 800/900 whereas device-width is less in general, resulting in small texte etc.- those meta correct this... -->
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, height=device-height"/>
+        
+        <link rel="stylesheet" href="./style/bootstrap.css"/> <!-- Bootstrap -->
+
+        <link rel="stylesheet" href="./style/style.css"/> <!-- Style principale -->
+        <link rel="stylesheet" href="./style/styleh.css" media="screen and (max-width: 1200px)"/> <!-- Style avec media queries -->
+    </head>
+
+    <body>
+        <div> <!-- La partie globale centrée -->
+            <header> <!-- L'entête -->
+                <div></div> <!-- Logo -->
+                <div> <!-- Nom -->
+					<h2>Bjorn K. Haraldson</h2>
+                    <p>Etudiant en informatique</p>
+				</div>
+            </header>
+
+            <main> <!-- La partie principale -->
+                <nav> <!-- Le menu -->
+                    <ul>
+                        <li><a href="accueil.html">Accueil</a>
+                            <ul>
+                                <li><a href="accueil.html#introduction">Introduction</a></li>
+                                <li><a href="accueil.html#presentation">Présentation</a></li>
+                                <li><a href="accueil.html#motivation">Motivation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="competences.html">Compétences</a>
+                            <ul>
+                                <li><a href="competences.html#langages">Langages</a></li>
+                                <li><a href="competences.html#leadership">Leadership</a></li>
+                                <li><a href="competences.html#qualites">Qualités</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="experiences.html">Experiences</a>
+                            <ul>
+                                <li><a href="experiences.html#stage">Stage</a></li>
+                                <li><a href="experiences.html#scolarite">Scolarité</a></li>
+                                <li><a href="experiences.html#bac">Baccalauréat</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="loisirs.html">Loisirs</a>
+                            <ul>
+                                <li><a href="loisirs.html#jeux">Jeux vidéo</a></li>
+                                <li><a href="loisirs.html#volleyball">Volleyball</a></li>
+                                <li><a href="loisirs.html#art">Art</a></li>
+                            </ul>
+                        </li>
+                     </ul>
+                </nav>
+
+                <div> <!-- Le slider avec l'image -->
+                    <div>
+                        <h1>Bienvenue!</h1>
+                        <p>Vous vous trouvez actuellement sur mon e-Portfolio</p>
+                    </div>
+                </div>
+
+                <section> <!-- Le contenu de la page -->
+                    <article id="introduction"> <!-- Les différents articles -->
+                        <h1><img src="./assets/portable.png" title="Mon introduction" alt="Mon introduction"/>Introduction</h1> <!-- Titre avec icon -->
+                        <img class="droite" src="./assets/introduction.jpg" title="Moi, introduit" alt="Moi, introduit"/>
+                        <p class="bootstrap">
+                            Vous vous trouvez actuellement sur mon <b>e-Portfolio</b>!<br><br>
+                            Vous retrouverez à travers les <b>différentes parties</b> de ce site une présentation <b>complète</b>, si j'y arrive, de ma personne.
+                            Mais laissez-moi tout de même vous faire une <b>petite</b> présentation rapide... 
+                            Ce qui au passage me rappelle une belle citation que je vais vous partager.
+
+                            <div class="media border p-3">
+                                <img src="./assets/leonard.jpg" title="Léonard De Vinci" alt="Léonard De Vinci" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                                <div class="media-body">
+                                  <h4>Léonard de Vinci<small><i> XVe siècle</i></small></h4>
+                                  <p>C’est à tort que les hommes se plaignent de la fuite du temps, en l’accusant d’être trop rapide, sans voir qu’il s’écoule à la bonne vitesse.</p>      
+                                </div>
+                             </div>
+                            
+                        </p>
+                    </article>
+
+                    <article id="presentation"> <!-- Article présentation -->
+                        <h1><img src="./assets/presentation.png" title="Ma présentation" alt="Ma présentation"/>Présentation</h1>
+                        <img class="gauche" src="./assets/profil.jpg" title="Ma tronche" alt="Ma tronche"/>
+                        <p>
+                            Je m’appelle <b>Bjorn K. Haraldson</b> !<br><br>
+                            Je suis étudiant en informatique à l’<b>Université de Paris</b> et je suis <b>passionné</b> par ce que je fais.<br><br>
+                            J’espère pouvoir vous transmettre cette passion ! 😉 
+                        </p>
+                    </article>
+
+                    <article id="motivation"> <!-- Article motivation -->
+                        <h1><img src="./assets/motivation.png" alt="Mes motivations"/>Motivation</h1>
+                        <img class="droite" src="./assets/motive.jpg" alt="Moi, motivé"/>
+                        <p>
+                            Je me considère très <b>chanceux</b>, en effet, je suis de ceux qui tiennent leur motivation de leur <b>passion.</b><br><br>
+                            Celà dit, mes motivations sont <b>clairs</b>: je recherche un <b>stage de deuxième année.</b><br><br>
+                            Je voudrais me spécialiser dans le développement de <b>jeux-vidéo</b>..
+                            Alors si vous êtes <b>intéressés</b>, ou si vous connaissez avez des <b>contacts</b>, n'hesitez surtout pas à me contacter!
+                        </p>
+                    </article>
+                </section>
+                
+                <aside> <!-- Barre latérale -->
+                    <article> <!-- Annuaire -->
+                        <h1><img src="./assets/annuaire.png" alt="Mon annuaire"/>Me contacter</h1>
+                        <p>
+                            <a href="https://gmail.com"><img src="./assets/gmail.png" alt="Mon gmail"/></a>
+                            <a href="https://linkedin.com"><img src="./assets/linkedin.png" alt="Mon linkedin"/></a>
+                            <a href="https://twitter.com"><img src="./assets/twitter.png" alt="Mon twitter"/></a>
+                            <a href="https://instagram.com"><img src="./assets/instagram.png" alt="Mon instagram"/></a>
+                        </p>
+                    </article>
+
+                    <article> <!-- Amis -->
+                        <h1><img src="./assets/amis.png" alt="Mes amis"/>Mes collègues</h1>
+                        <p>
+                            <img src="./assets/ricardo.jpg" alt="Mon meilleur ami Ricardo" />Ricardo Pelota<br>
+                            <img src="./assets/pierre.jpg" alt="Mon cher collègue Pierre"/>Pierre Dupont<br>
+                            <img src="./assets/simon.jpg" alt="Mon meilleur camarade Simon"/>Simon Salogni<br>
+                            <img src="./assets/leo.jpg" alt="Mon meilleur pote Léo"/>Léo Charlotte<br>
+                            <img src="./assets/yanis.jpg" alt="Mon mentor Yanis"/>Yanis Spinoza
+                        </p>
+                    </article>
+                </aside>
+            </main>
+
+            <footer> <!-- Le pied de page -->
+                <p>Copyright 2020 © KILIC Fatih</p>
+			</footer>
+        </div>
+    </body>
+</html>

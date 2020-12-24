@@ -1,0 +1,25 @@
+/* //////////////////////////////// */
+/*    Style pour competences.html   */
+/* //////////////////////////////// */
+
+/* //////////////////////////////// */
+/*              Slider              */
+/* //////////////////////////////// */
+main > div
+{
+    background-image: url(../assets/experience.gif); /* Pour changer l'image du slider */
+}
+
+/* //////////////////////////////// */
+/*              Page                */
+/* //////////////////////////////// */
+#bac div 
+{
+    text-align: center; /* Pour aligner le bouton au centre */
+}
+
+#bac div img
+{
+    width: 30%; /* La longueur de l'image */
+}
+

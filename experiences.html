@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>ePortfolio - Experiences</title>
+        <link rel="icon" href="./assets/portable.png"/>
+        
+        <!-- Description -->
+        <meta name="description" content="ePortfolio de Fatih pour le projet de CDIN">
+        <meta name="keywords" content="HTML, CSS, CDIN, ePortfolio">
+        <meta name="author" content="Fatih KILIC">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
+        <!-- mobile specific info ... mobile specify windows size to 800/900 whereas device-width is less in general, resulting in small texte etc.- those meta correct this... -->
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, height=device-height"/>
+
+        <link rel="stylesheet" href="./style/bootstrap.css"/> <!-- Bootstrap -->
+
+        <link rel="stylesheet" href="./style/style.css"/> <!-- Style principale -->
+        <link rel="stylesheet" href="./style/styleh.css" media="screen and (max-width: 1200px)"/> <!-- Style avec media queries -->
+        <link rel="stylesheet" href="./style/style_experiences.css"/> <!-- Style particulier -->
+    </head>
+
+    <body>
+        <div> <!-- La partie globale centrée -->
+            <header> <!-- L'entête -->
+                <div></div> <!-- Logo -->
+                <div> <!-- Nom -->
+					<h2>Bjorn K. Haraldson</h2>
+                    <p>Etudiant en informatique</p>
+				</div>
+            </header>
+
+            <main> <!-- La partie principale -->
+                <nav> <!-- Le menu -->
+                    <ul>
+                        <li><a href="accueil.html">Accueil</a>
+                            <ul>
+                                <li><a href="accueil.html#introduction">Introduction</a></li>
+                                <li><a href="accueil.html#presentation">Présentation</a></li>
+                                <li><a href="accueil.html#motivation">Motivation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="competences.html">Compétences</a>
+                            <ul>
+                                <li><a href="competences.html#langages">Langages</a></li>
+                                <li><a href="competences.html#leadership">Leadership</a></li>
+                                <li><a href="competences.html#qualites">Qualités</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="experiences.html">Experiences</a>
+                            <ul>
+                                <li><a href="experiences.html#stage">Stage</a></li>
+                                <li><a href="experiences.html#scolarite">Scolarité</a></li>
+                                <li><a href="experiences.html#bac">Baccalauréat</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="loisirs.html">Loisirs</a>
+                            <ul>
+                                <li><a href="loisirs.html#jeux">Jeux vidéo</a></li>
+                                <li><a href="loisirs.html#volleyball">Volleyball</a></li>
+                                <li><a href="loisirs.html#art">Art</a></li>
+                            </ul>
+                        </li>
+                     </ul>
+                </nav>
+
+                <div> <!-- Le slider avec l'image -->
+                    <div>
+                        <h1>Mes expériences</h1>
+                        <p>De petites éxperiences mais de grandes leçons..</p>
+                    </div>
+                </div>
+
+                <section> <!-- Le contenu de la page -->
+                    <article id="stage"> <!-- Les différents articles -->
+                        <h1><img src="./assets/microsoft.png" alt="Mon stage"/>Stage d’été chez Microsoft</h1> <!-- Titre avec icon -->
+                        <img class="droite" src="./assets/microsoft_france.jpg" alt="Ma future entreprise"/>
+                        <p class="bootstrap">
+                            J’ai eu l’<b>opportunité</b> d’effectuer un stage d’été chez <b>Microsoft</b> l’été dernier de Juillet à Septembre 2019.<br><br>
+                            Cela m’a permis de me créer un <b>entourage professionnel</b> et d’acquérir des <b>connaissances.</b><br><br>
+                            Notamment sur le fonctionnement d’une <b>entreprise</b> de cette envergure et comment elle fait pour gérer ses <b>milliers d’employés</b>.<br><br>
+                            Voici ce que j'ai particulièrement <b>aimé</b> dans ce stage:<br>
+                            <div class="progress" style="height:10%">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:40%">Ce que j'ai appris</div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:20%">La cantine gratuite</div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:30%">La ville du stage</div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:10%">Le salaire</div>
+                            </div>
+                        </p>
+                    </article>
+
+                    <article id="scolarite"> <!-- Article scolarité -->
+                        <h1><img src="./assets/university.png" alt="Mon université"/>IUT de Paris</h1>
+                        <img class="gauche" src="./assets/descartes.jpg" title="Mon IUT que j'adore" alt="Mon IUT que j'adore"/>
+                        <p class="bootstrap">
+                            Je suis depuis <b>un an et demi</b> maintenant un cursus <b>informatique</b> dans l’IUT de Paris, le <b>meilleur</b> de la planète !<br><br>
+                            Cette <b>IUT</b> a la particularité de posséder un environnement très <b>sympathique</b> et je m’y retrouve parfaitement.<br><br>
+                            Voici un <b>tableau</b> récapitulant mes notes dans différentes matières.<br>
+
+                            <table class="table"> <!-- Tableau -->
+                                <thead class="thead-dark">  <!-- Entête -->
+                                    <tr><th>Matière</th><th>Coefficient</th><th>Note</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-primary"><td colspan=2 >Moyenne générale</td><td>16.5</td></tr> <!-- Ligne -->
+                                    <tr class="table-success"><td>Bases de l'informatique</td><td>13</td><td>17</td></tr>
+                                    <tr><td>IAP</td><td>3.5</td><td>17</td></tr>
+                                    <tr><td>SDA</td><td>2.5</td><td>18</td></tr>
+                                    <tr><td>IBD</td><td>3.5</td><td>16.5</td></tr>
+                                    <tr><td>CDIN</td><td>2.5</td><td>18.5</td></tr>
+                                    <tr><td>PJSI1</td><td>1.5</td><td>14</td></tr>
+                                    <tr class="table-success"><td>Bases de culture scientifique, sociale et humaine</td><td>8</td><td>16</td></tr>
+                                    <tr><td>Mathématiques discrètes</td><td>2.5</td><td>17</td></tr>
+                                    <tr><td>Algèbre Linéaire</td><td>2</td><td>18</td></tr>
+                                    <tr><td>Environnement économique</td><td>1.5</td><td>16.5</td></tr>
+                                    <tr><td>FDO</td><td>2.5</td><td>19</td></tr>
+                                    <tr><td>Communication</td><td>2.5</td><td>19</td></tr>
+                                    <tr><td>Anglais</td><td>1.5</td><td>14</td></tr>
+                                    <tr><td>PPP</td><td>1.5</td><td>14</td></tr>
+                                    <tr class="table-danger"><td colspan=3>Pas d'absences signalés</tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </article>
+
+                    <article id="bac"> <!-- Article baccalauréat -->
+                        <h1><img src="./assets/bac.png" alt="Mon diplôme"/>Baccalauréat</h1>
+                        <img class="droite" src="./assets/graduate.jpg" alt="Mon baccalauréat"/>
+                        <p>
+                            J’ai bien sûr mon diplôme du <b>baccalauréat scientifique</b>.
+                            Mais pas que, je l’ai eu <b>mention bien</b> ! De quoi en être <b>fier</b>.<br><br>
+                            J'ai travaillé dur pour l'avoir, ce n'était <b>pas</b> donné.
+                            Scientifique en plus, je me rappelle l'avoir accroché sur mon mur pendant <b>des mois</b>!<br><br>
+                            Une <b>vraie fierté</b> pour tout possédeur de ce <b>diplôme</b>. Le voici.<br>
+                            <div><img src="./assets/diplome.jpg"/></div>
+                        </p>
+                    </article>
+                </section>
+                
+                <aside> <!-- Barre latérale -->
+                    <article> <!-- Annuaire -->
+                        <h1><img src="./assets/annuaire.png" alt="Mon annuaire"/>Me contacter</h1>
+                        <p>
+                            <a href="https://gmail.com"><img src="./assets/gmail.png" alt="Mon gmail"/></a>
+                            <a href="https://linkedin.com"><img src="./assets/linkedin.png" alt="Mon linkedin"/></a>
+                            <a href="https://twitter.com"><img src="./assets/twitter.png" alt="Mon twitter"/></a>
+                            <a href="https://instagram.com"><img src="./assets/instagram.png" alt="Mon instagram"/></a>
+                        </p>
+                    </article>
+
+                    <article> <!-- Amis -->
+                        <h1><img src="./assets/amis.png" alt="Mes amis"/>Mes collègues</h1>
+                        <p>
+                            <img src="./assets/ricardo.jpg" alt="Mon meilleur ami Ricardo" />Ricardo Pelota<br>
+                            <img src="./assets/pierre.jpg" alt="Mon cher collègue Pierre"/>Pierre Dupont<br>
+                            <img src="./assets/simon.jpg" alt="Mon meilleur camarade Simon"/>Simon Salogni<br>
+                            <img src="./assets/leo.jpg" alt="Mon meilleur pote Léo"/>Léo Charlotte<br>
+                            <img src="./assets/yanis.jpg" alt="Mon mentor Yanis"/>Yanis Spinoza
+                        </p>
+                    </article>
+                </aside>
+            </main>
+
+            <footer> <!-- Le pied de page -->
+                <p>Copyright 2020 © KILIC Fatih</p>
+			</footer>
+        </div>
+    </body>
+</html>

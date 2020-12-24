@@ -1,0 +1,71 @@
+/* //////////////////////////////// */
+/*    Style pour competences.html   */
+/* //////////////////////////////// */
+
+/* //////////////////////////////// */
+/*              Slider              */
+/* //////////////////////////////// */
+main > div
+{
+    background-image: url(../assets/loisirs.gif); /* Pour changer l'image du slider */
+}
+
+/* //////////////////////////////// */
+/*              Page                */
+/* //////////////////////////////// */
+#volleyball p, #volleyball h1
+{
+    text-align: left; /* Garder le texte à gauche */
+}
+
+#volleyball
+{
+    text-align: center; /* Centrer la vidéo */
+}
+
+#volleyball iframe
+{
+    margin-top: 20px; /* Séparer la vidéo du texte */
+    width: 50%; /* Adapter la longueur à l'écran */
+    height: 25vw; /* Adapter la largeur à l'écran */
+    border-radius: 25px; /* Arrondir les contours */
+}
+
+#art div 
+{
+    width: 80%; /* La longueur des images */
+    margin: auto; /* Pour centrer la gallerie */
+}
+
+#art div img
+{
+    width: 20%; /* Pour aligner les images équitablement */
+    border-radius: 15px; /* Arrondir les contours */
+}
+
+#art
+{
+    text-align: center; /* Centrer la vidéo */
+}
+
+#art audio
+{
+    margin-bottom: 20px; /* Pour séparer l'audio du texte */
+    width: 50%; /* Pour définir la largeur de l'audio */
+}
+
+#art p, #art h1
+{
+    text-align: left; /* Garder le texte à gauche */
+}
+
+form
+{
+    margin: 0 auto; /* Pour centrer le formulaire */
+    width: 90%; /* value of your choice which suits your alignment */
+}
+
+form div:first-child 
+{
+    text-align: center; /* Pour centrer le titre */
+}

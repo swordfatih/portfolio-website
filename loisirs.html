@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>ePortfolio - Loisirs</title>
+        <link rel="icon" href="./assets/portable.png"/>
+        
+        <!-- Description -->
+        <meta name="description" content="ePortfolio de Fatih pour le projet de CDIN">
+        <meta name="keywords" content="HTML, CSS, CDIN, ePortfolio">
+        <meta name="author" content="Fatih KILIC">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
+        <!-- mobile specific info ... mobile specify windows size to 800/900 whereas device-width is less in general, resulting in small texte etc.- those meta correct this... -->
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, height=device-height"/>
+
+        <link rel="stylesheet" href="./style/bootstrap.css"/> <!-- Bootstrap -->
+
+        <link rel="stylesheet" href="./style/style.css"/> <!-- Style principale -->
+        <link rel="stylesheet" href="./style/styleh.css" media="screen and (max-width: 1200px)"/> <!-- Style avec media queries -->
+        <link rel="stylesheet" href="./style/style_loisirs.css"/> <!-- Style particulier -->
+    </head>
+
+    <body>
+        <div> <!-- La partie globale centrée -->
+            <header> <!-- L'entête -->
+                <div></div> <!-- Logo -->
+                <div> <!-- Nom -->
+					<h2>Bjorn K. Haraldson</h2>
+                    <p>Etudiant en informatique</p>
+				</div>
+            </header>
+
+            <main> <!-- La partie principale -->
+                <nav> <!-- Le menu -->
+                    <ul>
+                        <li><a href="accueil.html">Accueil</a>
+                            <ul>
+                                <li><a href="accueil.html#introduction">Introduction</a></li>
+                                <li><a href="accueil.html#presentation">Présentation</a></li>
+                                <li><a href="accueil.html#motivation">Motivation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="competences.html">Compétences</a>
+                            <ul>
+                                <li><a href="competences.html#langages">Langages</a></li>
+                                <li><a href="competences.html#leadership">Leadership</a></li>
+                                <li><a href="competences.html#qualites">Qualités</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="experiences.html">Experiences</a>
+                            <ul>
+                                <li><a href="experiences.html#stage">Stage</a></li>
+                                <li><a href="experiences.html#scolarite">Scolarité</a></li>
+                                <li><a href="experiences.html#bac">Baccalauréat</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="loisirs.html">Loisirs</a>
+                            <ul>
+                                <li><a href="loisirs.html#jeux">Jeux vidéo</a></li>
+                                <li><a href="loisirs.html#volleyball">Volleyball</a></li>
+                                <li><a href="loisirs.html#art">Art</a></li>
+                            </ul>
+                        </li>
+                     </ul>
+                </nav>
+
+                <div> <!-- Le slider avec l'image -->
+                    <div>
+                        <h1>Mes loisirs</h1>
+                        <p>Parfois un bon divertissement ne s'échange à rien</p>
+                    </div>
+                </div>
+
+                <section> <!-- Le contenu de la page -->
+                    <article id="jeux"> <!-- Les différents articles -->
+                        <h1><img src="./assets/jeux.png" alt="Moi, gameur"/>Ma passion pour les jeux-vidéo</h1> <!-- Titre avec icon -->
+                        <img class="droite" src="./assets/csgo.jpg" alt="Mon jeu préféré"/>
+                        <p class="bootstrap">
+                            Vous l’avez <b>peut-être</b> deviné !<br><br> 
+                            J’ai <b>une passion innée</b> pour les jeux-vidéo, ces derniers ont en effet <b>bercé</b> mon enfance.<br><br> 
+                            J’ai joué à <b>divers jeux</b> depuis tout petit et celui qui m’a le plus marqué n’est d’autre que le classique <b>Counter-Strike : Global Offensive</b>. 
+                            J’y joue très souvent et j’adore !<br><br>  
+                            D’ailleurs, je <b>recrute</b> des joueurs pour mon équipe <b>eSport compétitif</b>.
+                            Si vous voulez nous rejoindre <b>n’hésitez pas</b> à compléter le formulaire ci-dessous !
+                            
+                            <div class="bootstrap"> <!-- Du code bootstrap -->
+                                <form class="form-horizontal" action="/action_page.php">  <!-- Formulaire horizontal -->
+                                    <div><h3>Formulaire d'inscription</h3></div>
+                                    <div class="row">  <!-- Ligne -->
+                                        <div class="col">  <!-- Colonne -->
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-2" for="pwd">Prénom</label>
+                                                <div class="col-sm-10"><input type="test" class="form-control" id="text" placeholder="Entrez votre prénom" name="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col"> <!-- Colonne -->
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-2" for="pwd">Nom</label>
+                                                <div class="col-sm-10"><input type="test" class="form-control" id="text" placeholder="Entrez votre nom" name="text"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">  <!-- Formulaire par ligne -->
+                                        <label class="control-label col-sm-2" for="pwd">E-mail</label>
+                                        <div class="col-sm-11"><input type="test" class="form-control" id="text" placeholder="Entrez votre e-mail" name="text"></div>
+                                    </div>
+
+                                    <div class="row">  <!-- Ligne -->
+                                        <div class="col">  <!-- Colonne -->
+                                            <div class="form-group"> <!-- Votre rank -->
+                                                <label for="sel1" class="control-label col-sm-4">Votre rang</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-control" id="sel1">
+                                                        <option>Silver</option>
+                                                        <option>Nova</option>
+                                                        <option>Master Guardian</option>
+                                                        <option>Global Elite</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col"> <!-- Colonne -->
+                                            <label class="control-label col-sm-4" for="comment">Votre sexe</label>
+                                            <div class="col-sm-6">
+                                                <label class="radio-inline"><input type="radio" name="optradio" checked>Fille</label>
+                                                <label class="radio-inline"><input type="radio" name="optradio">Homme</label>
+                                                <label class="radio-inline"><input type="radio" name="optradio">Ne pas renseigner</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">  <!-- Motivation -->
+                                        <label class="control-label col-sm-4" for="comment">Quelles sont vos motivations</label>
+                                        <div class="col-sm-11"><textarea class="form-control" rows="5" id="comment"></textarea></div>
+                                    </div>
+
+                                    <div class="form-group"> <!-- Checkbox -->     
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <div class="checkbox"><label><input type="checkbox" name="remember"> Acceptez-vous qu'on difuse votre identité?</label></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group"> <!-- Button -->          
+                                        <button type="submit" class="btn btn-sm btn-warning col-sm-9">Envoyer</button><button type="submit" class="btn btn-sm btn-danger col-sm-2">Annuler</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </p>
+                    </article>
+
+                    <article id="volleyball">
+                        <h1><img src="./assets/volleyball.png" alt="Moi, sportif"/>Le Volleyball</h1>
+                        <img class="gauche" src="./assets/volleyball.jpg" alt="Mon sport favori"/>
+                        <p class="bootstrap">
+                            Je pratique le <b>Volleyball</b> depuis un certain temps maintenant !<br><br>
+                            J’ai joué dans le club du <b>Paris Saint Germain</b> et j’ai même atteins les <b>demi-finales</b> de la coupe de France.<br><br>
+                            J’en suis <b>très fier</b> et je voulais vous <b>partager</b> cette loisir 😊.<br><br>
+                            Vous ne connaissez <b>pas</b> le volleyball? Sérieux? Alors voici les règles, rien que pour <b>vous</b>!
+                        </p>
+                        <iframe src="https://www.youtube.com/embed/7Mkn7ST1uAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+
+                    <article id="art">
+                        <h1><img src="./assets/art.png" alt="Moi, artiste"/>Art</h1>
+                        <img class="droite" src="./assets/photographie.jpg" alt="Mon art"/>
+                        <p> 
+                            J’écoute pratiquement <b>toutes sortes de musiques</b>, cependant j’ai un goût particulier à la musique <b>classique.</b><br><br>
+                            Je voudrais vous partager une <b>partition</b> de piano que j’adore, j’espère que vous autant !<br><br>
+                        </p>
+
+                        <audio controls src="./assets/red_swan.mp3"></audio><br> <!-- Musique -->
+                        
+                        <p class="bootstrap"> 
+                            J’adore la <b>photographie</b> ! J’ai même une page <b>Instagram</b> où je publie quotidiennement mes <b>plus belles photographies</b>.<br><br>
+                            Je vous laisse découvrir certaines de ces <b>belles images</b>. Vous en trouverez plus sur mon compte Instagram à <b>droite</b.<br><br>
+                        </p>
+
+                        <!-- Gallerie -->
+                        <div class="bootstrap">
+                            <img src="./assets/montagnes.jpg" class="float-left">
+                            <img src="./assets/moulin.jpeg" class="float-left">
+                            <img src="./assets/lac.jpg" class="float-left">
+                            <img src="./assets/jardin.jpg" class="float-left">
+                        </div>
+                    </article>
+                </section>
+                
+                <aside> <!-- Barre latérale -->
+                    <article> <!-- Annuaire -->
+                        <h1><img src="./assets/annuaire.png" alt="Mon annuaire"/>Me contacter</h1>
+                        <p>
+                            <a href="https://gmail.com"><img src="./assets/gmail.png" alt="Mon gmail"/></a>
+                            <a href="https://linkedin.com"><img src="./assets/linkedin.png" alt="Mon linkedin"/></a>
+                            <a href="https://twitter.com"><img src="./assets/twitter.png" alt="Mon twitter"/></a>
+                            <a href="https://instagram.com"><img src="./assets/instagram.png" alt="Mon instagram"/></a>
+                        </p>
+                    </article>
+
+                    <article> <!-- Amis -->
+                        <h1><img src="./assets/amis.png" alt="Mes amis"/>Mes collègues</h1>
+                        <p>
+                            <img src="./assets/ricardo.jpg" alt="Mon meilleur ami Ricardo" />Ricardo Pelota<br>
+                            <img src="./assets/pierre.jpg" alt="Mon cher collègue Pierre"/>Pierre Dupont<br>
+                            <img src="./assets/simon.jpg" alt="Mon meilleur camarade Simon"/>Simon Salogni<br>
+                            <img src="./assets/leo.jpg" alt="Mon meilleur pote Léo"/>Léo Charlotte<br>
+                            <img src="./assets/yanis.jpg" alt="Mon mentor Yanis"/>Yanis Spinoza
+                        </p>
+                    </article>
+                </aside>
+            </main>
+
+            <footer> <!-- Le pied de page -->
+                <p>Copyright 2020 © KILIC Fatih</p>
+			</footer>
+        </div>
+    </body>
+</html>

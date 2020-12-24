@@ -1,0 +1,66 @@
+/* //////////////////////////////// */
+/*      CSS pour version mobile     */
+/* //////////////////////////////// */
+
+/* //////////////////////////////// */
+/*            En tête               */
+/* //////////////////////////////// */
+header div:first-child
+{
+    background-size: 45% auto; /* Pour que le logo s'adapte */
+}
+
+header div:last-child
+{
+    font-size: 1.75vw; /* Pour que le texte s'adapte */
+} 
+
+header div:last-child h2
+{
+    font-size: 2.25vw; /* Pour que le texte s'adapte */
+}
+
+/* //////////////////////////////// */
+/*              Menu                */
+/* //////////////////////////////// */
+nav > ul, nav ul > li
+{
+    display: block; /* Pour aligner les sous parties verticalement */
+}
+
+nav ul ul li a
+{
+    background-color: #7699c7; /* On rend les sous parties plus foncés pour distinguer */
+}
+
+/* //////////////////////////////// */
+/*              Slider              */
+/* //////////////////////////////// */
+main > div h1
+{
+    font-size: 5.5vw; /* Adapter le texte à la taille de la page */
+    padding-top: 5vh; /* Adapter l'alignement à la taille de la page */
+}
+
+main > div p
+{
+    font-size: 2.75vw; /* Adapter le texte à la taille de la page */
+}
+
+/* //////////////////////////////// */
+/*              Page                */
+/* //////////////////////////////// */
+section
+{
+    display: block; /* Pour aligner la page et la barre latérale verticalement */
+    width: 100%; /* On reprend toute la place */
+}
+
+/* //////////////////////////////// */
+/*          Barre latérale          */
+/* //////////////////////////////// */
+aside
+{
+    width: 100%; /* On prend toute la place en largeur */
+    margin-left: 0;
+}
